@@ -104,3 +104,76 @@ ul li span:hover{
 	background: #edeef0;
 
 }
+@media screen and (max-width: 762px){
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-size: 16px;
+	}
+	.container{
+		width: 50%;
+	}
+	
+	.todo-app{
+		width: 100%;
+		max-width: auto;
+		background: white;
+		margin: 60px auto 10px;
+		padding: 20px 15px 35px;
+		border-radius: 10px;
+	}
+	.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #edeef0;
+	padding-left: 0;
+	margin-bottom: 0;
+	border-radius: 20px;
+}
+input{
+	flex:1;
+	border: none ;
+	outline: none;
+	padding: 5px;
+	background: transparent;
+	font-weight: 4px;
+	font-size: 10px;
+	width: 100%;
+}
+button{
+	border: none;
+	outline: none;
+	padding: 4px 15px;
+	background: #ff5945;
+	color: #fff;
+	font-size: 10px;
+	cursor: pointer;
+	border-radius: 40px;
+}
+ul li{
+	list-style: none;
+	font-size: 13px;
+	padding: 12px 8px 12px 50px;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+
+
+}
+ul li::before{
+	content: '';
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-image: url(/assets/images/unchecked.png);
+	background-size: cover;
+	background-position: center;
+	top: 15px;
+	left: 8px;
+
+}
+
+}
