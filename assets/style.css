@@ -84,6 +84,7 @@ ul li.checked{
 	text-decoration: line-through;
 }
 ul li.checked::before{
+	content: ' ';
 	background-image: url(/assets/images/checked.png);
 
 }
